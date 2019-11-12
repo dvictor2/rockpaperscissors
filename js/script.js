@@ -5,6 +5,19 @@
 //GLOBAL VARIABLES
 /* global $ */
 
+$("document").ready(function(){
+    $('#shoot').click(function() {
+
+    let word = $("#input").val();
+    $("#userChoice").text(word);
+    });
+});
+
+
+
+
+
+
 
 
 // DOCUMENT READY FUNCTION BELOW
