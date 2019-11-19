@@ -10,6 +10,21 @@ $("document").ready(function(){
 
     let word = $("#input").val();
     $("#userChoice").text(word);
+
+
+
+
+ let options = ['rock','paper','scissors' ]
+ let number = Math.floor(Math.random()*3);
+ let computer= options[number]
+
+    $("#computerChoice").text(computer);
+    if (computer=== word){
+        
+    }
+
+
+
     });
 });
 
