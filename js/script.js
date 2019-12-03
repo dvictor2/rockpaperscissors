@@ -19,14 +19,41 @@ $("document").ready(function(){
  let computer= options[number]
 
     $("#computerChoice").text(computer);
-    if (computer=== word){
+    if (computer=== "scissors" && word === "scissors") {
+    $("result").text(" It's a tie")
+    }
+        else if(computer === "scissors" && word === "paper") {
+    $("#result").text(" You Lose")
+        }
+        else if (computer === "scissors" && word === "rock") {
+    $("#result").text(" You Win")
+        }
+        else if (computer === "rock" && word === "rock") {
+    $("#result").text(" It's a tie")
+        }
+        else if (computer === "rock" && word === "paper") {
+    $("#result").text(" You Win")
+        }
+        else if (computer === "rock" && word === "scissors") {
+    $(".result").text(" You Lose")
+        }
+        else if (computer === "paper" && word === "paper"){
+    $("#result").text(" It's a tie")
+        }
+        else if (computer === "paper" && word === "rock") {
+    $("#result").text(" You Lose")
+        }
+        else if (computer === "paper" && word === "scissors"){
+    $("#result").text(" You Win")
         
     }
 
-
-
     });
-});
+
+
+
+
+
 
 
 
@@ -36,4 +63,4 @@ $("document").ready(function(){
 
 
 // DOCUMENT READY FUNCTION BELOW
-
+})
